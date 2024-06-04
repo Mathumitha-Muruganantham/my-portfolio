@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="stye.css">
+    <script src="https://kit.fontawesome.com/e85ee69450.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p><br><br>
+                <h1>Hi,This is <span>Mathumitha</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+<!----------------------about-------->     
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img src="img/first.jpg" width="350px"  height="500px" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am currently doing my UG in the department of information technology in University college of engineering,Nagercoil.
+                        I am good at communication skill and interacting skill.I love coding and now currently having an interest in web development.   
+                     </p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web Application Development</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Designing web/App interfaces using figma</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SSC</span><br>M.P.A matriculation higher secondary school,Puthukadai.</li>
+                            <li><span>HSC</span><br>Government higher secondary school,Munchirai.</li>
+                            <li><span>College</span><br>University college of engineering,Nagercoil.</li>
+                        </ul>
+                     </div>
+                </div>    </div>
+        </div>
+    </div>
+<!--------------------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2><br>
+                    <p>Web development using HTML,css,javascript.
+                       And also learned different frameworks for developing the web application.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2><br>
+                    <p>UI/UX design for web/app using figma.
+                        UI/UX design for both web application and mobile application is done through 
+                        online platform called figma.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+    </div>
+</div>  
+<!------------portfolio--->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work.png">
+                <div class="layer">
+                    <h3>Nail art app</h3>
+                    <p>This app uses Artificial Intelligence model to choose the 
+                        nail art based on your dress color and skin tone.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work1.jpg">
+                <div class="layer">
+                    <h3>Garbage collecting app</h3>
+                    <p>In this app,you can give the location of the garbage that
+                        has to be removed.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work2.jpg">
+                <div class="layer">
+                    <h3>Paint sales app</h3>
+                    <p>Using this app people can easily purchase the 
+                        paint they want.They can be able to choose the color,amount and company.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+           </div>
+                <a href="#" class="btn">See more</a>
+</div>
+<!----------contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>mathumithamuruganantham@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9042492726</p>
+                    <div class="social-icons">
+                        <a href="https://www,linkedin.com/in/mathumitha-m-59202324a"><i class="fab fa-linkedin"></i></a>
+                        <a href="www.mathumithamuruganantham@gmail.com"><i class="fab fa-gmail"></i></a>
+                    </div>
+                    <a href="img/Resume.pdf" download class="btn btn2">Download cv</a> 
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name"required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ Mathumitha.Made with <i class="fas fa-heart"></i> by Mathumithamuruganantham</p>
+            </div>
+        </div>
+
+
+
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    
+   }
+    
+   
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function openmenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzlPjLXlq0r17gfVABLUPcCb-4fQhF8j9akmEbGMmwgmIn0KFEYMt-2r7ex1qwjUMnLdw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
